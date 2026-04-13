@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="04/04/26||22:23:29" using="Simscape Multibody Link Version 7.4" from="SolidWorks 29.0.0"/>
+<ModelUnits mass="kilogram" length="centimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="testWOblade" uid="testWOblade" version="177">
+<AssemblyFile name="testWOblade.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="FeatherShaft-1" uid="FeatherShaft-1" entityUid="FeatherShaft*:*Default">
+<Transform>
+<Rotation>0.10134153664513164 -0.98373366477875657 0.14831712554981871 -0.99473558790621064 -0.10247492450782979 0 0.015198786243936021 -0.14753632308035813 -0.98893985169404497</Rotation>
+<Translation>0.0098545325236217736 0.067000000000000004 -0.067788151066647651</Translation>
+</Transform>
+</Instance>
+<Instance name="FeatherShaft-2" uid="FeatherShaft-2" entityUid="FeatherShaft*:*Default">
+<Transform>
+<Rotation>-0.98893985169404497 0 0.14831712554981816 0 1 0 -0.14831712554981816 0 -0.98893985169404497</Rotation>
+<Translation>-0.010464913676704019 0.066999999999999976 0.067696608615441661</Translation>
+</Transform>
+</Instance>
+<Instance name="Blade Grip-1" uid="Blade Grip-1" entityUid="Blade Grip*:*Default">
+<Transform>
+<Rotation>-0.98817232816342315 -0.038954847204413799 0.14831712554981863 -0.039390512110200143 0.9992238926065049 0 -0.1482020155320975 -0.0058422875301202427 -0.98893985169404497</Rotation>
+<Translation>0.0096215252058278744 0.082487970335400826 -0.070351056152599539</Translation>
+</Transform>
+</Instance>
+<Instance name="Blade Grip-2" uid="Blade Grip-2" entityUid="Blade Grip*:*Default">
+<Transform>
+<Rotation>0.98859571860412809 -0.026087073929956604 -0.14831712554981852 0.026378827676192693 0.99965201817954119 1.1210650463500116e-15 0.14826551388646445 -0.0039124318963080079 0.98893985169404486</Rotation>
+<Translation>-0.011240056136492789 0.082494606281782887 0.070108315550283684</Translation>
+</Transform>
+</Instance>
+<Instance name="RodWithBase-1" uid="RodWithBase-1" grounded="true" entityUid="RodWithBase*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="FeatherShaftClamp-2" uid="FeatherShaftClamp-2" entityUid="FeatherShaftClamp*:*Default">
+<Transform>
+<Rotation>-0.98893985169404497 0 0.14831712554981782 0 1 0 -0.14831712554981782 0 -0.98893985169404497</Rotation>
+<Translation>0.007258982826499916 0.067000000000000004 -0.050481703662001672</Translation>
+</Transform>
+</Instance>
+<Instance name="CF_Plate-1" uid="CF_Plate-1" entityUid="CF_Plate*:*Default">
+<Transform>
+<Rotation>0.14831712554981782 0 0.98893985169404497 0 1 0 -0.98893985169404497 0 0.14831712554981782</Rotation>
+<Translation>0 0.052999999999999999 0</Translation>
+</Transform>
+</Instance>
+<Instance name="FeatherShaftClamp-1" uid="FeatherShaftClamp-1" entityUid="FeatherShaftClamp*:*Default">
+<Transform>
+<Rotation>-0.98893985169404497 -1.0979437933200391e-16 0.14831712554981782 -1.1102230246250788e-16 1 0 -0.14831712554981782 0 -0.98893985169404497</Rotation>
+<Translation>-0.0078693639795822112 0.066999999999999976 0.050390161210795821</Translation>
+</Transform>
+</Instance>
+<Instance name="CF_Plate-2" uid="CF_Plate-2" entityUid="CF_Plate*:*Default">
+<Transform>
+<Rotation>0.14831712554981788 0 0.98893985169404508 0 1 0 -0.98893985169404508 0 0.14831712554981788</Rotation>
+<Translation>0 0.076999999999999985 0</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>RodWithBase-1</Uid>
+</InstancePath>
+<Position>0 0.23999999999999999 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>CF_Plate-1</Uid>
+</InstancePath>
+<Position>0 0.0039999999999999966 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>RodWithBase-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>CF_Plate-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Coincident name="Coincident6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>CF_Plate-1</Uid>
+</InstancePath>
+<Position>-0.066000000000000003 0.0039999999999999966 -0.016308603780117312</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FeatherShaftClamp-1</Uid>
+</InstancePath>
+<Position>0.01500000000000001 0.009000000000000008 -0.014999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>CF_Plate-1</Uid>
+</InstancePath>
+<Position>0 0.0039999999999999966 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FeatherShaftClamp-1</Uid>
+</InstancePath>
+<Position>-0.014999999999999979 -0.009999999999999995 -0.014999999999999999</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident8">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>CF_Plate-1</Uid>
+</InstancePath>
+<Position>-0.066000000000000003 0.0039999999999999966 -0.016308603780117312</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FeatherShaftClamp-1</Uid>
+</InstancePath>
+<Position>0.016000000000000011 0.0089999999999999941 -0.014999999999999986</Position>
+<Axis>1 -1.9274705288631205e-16 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>CF_Plate-1</Uid>
+</InstancePath>
+<Position>0.066000000000004513 0.0039999999999999966 -0.016308603780117312</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FeatherShaftClamp-2</Uid>
+</InstancePath>
+<Position>0.015000000000000006 0.009000000000000008 0.014999999999999986</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident11">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>CF_Plate-1</Uid>
+</InstancePath>
+<Position>0 0.0039999999999999966 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FeatherShaftClamp-2</Uid>
+</InstancePath>
+<Position>-0.01499999999999998 -0.009999999999999995 -0.015000000000000006</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident12">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>CF_Plate-1</Uid>
+</InstancePath>
+<Position>0.066000000000004513 0.0039999999999999966 0.015691396219882688</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FeatherShaftClamp-2</Uid>
+</InstancePath>
+<Position>-0.01599999999999999 0.0089999999999999941 -0.014999999999999999</Position>
+<Axis>-1 -3.8549410577262406e-16 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>RodWithBase-1</Uid>
+</InstancePath>
+<Position>0 0.23999999999999999 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>CF_Plate-2</Uid>
+</InstancePath>
+<Position>0 0.0040000000000000036 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident13">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FeatherShaftClamp-1</Uid>
+</InstancePath>
+<Position>-0.014999999999999986 0.010000000000000009 -0.014999999999999999</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>CF_Plate-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident14">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FeatherShaftClamp-2</Uid>
+</InstancePath>
+<Position>0.015000000000000006 0.009000000000000008 0.014999999999999986</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>CF_Plate-2</Uid>
+</InstancePath>
+<Position>0.066000000000004513 0.0040000000000000036 -0.016308603780117316</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>FeatherShaftClamp-2</Uid>
+</InstancePath>
+<Position>0 0 0.0044999999999999971</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>FeatherShaft-1</Uid>
+</InstancePath>
+<Position>0 0 0.032500000000000015</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident15">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FeatherShaftClamp-2</Uid>
+</InstancePath>
+<Position>0.01500000000000001 0.009000000000000008 -0.015000000000000006</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FeatherShaft-1</Uid>
+</InstancePath>
+<Position>0 0 -0.032500000000000015</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>FeatherShaftClamp-1</Uid>
+</InstancePath>
+<Position>0 0 -0.0044999999999999971</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>FeatherShaft-2</Uid>
+</InstancePath>
+<Position>0 0 0.032500000000000008</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident16">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FeatherShaftClamp-1</Uid>
+</InstancePath>
+<Position>0.01500000000000001 0.009000000000000008 0.014999999999999999</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FeatherShaft-2</Uid>
+</InstancePath>
+<Position>0 0 0.032500000000000008</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>FeatherShaft-1</Uid>
+</InstancePath>
+<Position>0 0 0.032500000000000015</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Blade Grip-1</Uid>
+</InstancePath>
+<Position>0 -0.015499999999999986 -1.0000000000010001e-06</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FeatherShaftClamp-2</Uid>
+</InstancePath>
+<Position>0.015000000000000006 0.009000000000000008 0.014999999999999986</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Blade Grip-1</Uid>
+</InstancePath>
+<Position>0.012499999999999999 0 0</Position>
+<Axis>0 1.1882855810441129e-16 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric8">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>FeatherShaft-2</Uid>
+</InstancePath>
+<Position>0 0 0.032500000000000008</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Blade Grip-2</Uid>
+</InstancePath>
+<Position>0 -0.015499999999999986 -1.0000000000010001e-06</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FeatherShaftClamp-1</Uid>
+</InstancePath>
+<Position>0.01500000000000001 0.009000000000000008 -0.014999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Blade Grip-2</Uid>
+</InstancePath>
+<Position>0.012500000000000002 0 0</Position>
+<Axis>0 1.227316859253591e-16 -1</Axis>
+</ConstraintGeometry>
+</Distance>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Blade Grip" uid="Blade Grip*:*Default" version="121">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Blade Grip.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.036470780732673007</Mass>
+<CenterOfMass>0 -0.015719838996430497 0.035909866349333693</CenterOfMass>
+<Inertia>2.7212256283255695e-05 2.4728633333620344e-05 6.9012762530634924e-06 -2.0773753116189719e-07 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Blade Grip_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="CF_Plate" uid="CF_Plate*:*Default" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="CF_Plate.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.020376151387795291</Mass>
+<CenterOfMass>2.6001135480945334e-15 0.0020000000000000005 -0.00031180016296571188</CenterOfMass>
+<Inertia>4.0501557430339642e-06 3.3267094107510533e-05 2.9271274768177359e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="CF_Plate_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="FeatherShaft" uid="FeatherShaft*:*Default" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="FeatherShaft.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0018378317023500295</Mass>
+<CenterOfMass>0 0 0</CenterOfMass>
+<Inertia>6.6590768681816044e-07 6.6590768681816044e-07 3.767554989817561e-08 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="FeatherShaft_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="FeatherShaftClamp" uid="FeatherShaftClamp*:*Default" version="128">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="FeatherShaftClamp.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.014683930129923634</Mass>
+<CenterOfMass>0 0 0</CenterOfMass>
+<Inertia>1.6259174865073451e-06 2.6203691667708526e-06 2.1544150074081017e-06 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="FeatherShaftClamp_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="RodWithBase" uid="RodWithBase*:*Default" version="113">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="RodWithBase.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.03214791762418432</Mass>
+<CenterOfMass>0 0.089687335092348233 0</CenterOfMass>
+<Inertia>0.00020736574873617353 5.3740036808417148e-06 0.00020736574873617353 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="RodWithBase_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
