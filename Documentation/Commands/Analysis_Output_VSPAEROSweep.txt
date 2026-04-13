@@ -1,0 +1,109 @@
+Number of analyses: 21
+----------------------------------------
+LIST OF ANALYSES:
+Analysis 0: BladeElement
+Analysis 1: CpSlicer
+Analysis 2: CompGeom
+Analysis 3: DegenGeom
+Analysis 4: PlanarSlice
+Analysis 5: DegenGeomMesh
+Analysis 6: EmintonLord
+Analysis 7: GeometryAnalysis
+Analysis 8: MassProp
+Analysis 9: FeaMeshAnalysis
+Analysis 10: Projection
+Analysis 11: SurfacePatches
+Analysis 12: WaveDrag
+Analysis 13: VSPAERODegenGeom
+Analysis 14: VSPAEROComputeGeometry
+Analysis 15: VSPAEROSinglePoint
+Analysis 16: VSPAEROSweep
+Analysis 17: VSPAEROReadPreviousAnalysis
+Analysis 18: ParasiteDrag
+Analysis 19: SurfaceIntersection
+Analysis 20: CfdMeshAnalysis
+----------------------------------------
+DETAILS FOR ANALYSIS: VSPAEROSweep
+----------------------------------------
+INDEX  | INPUT NAME                     | TYPE CODE
+------------------------------------------------------------
+0      | 2DFEMFlag                      | 1 (INT)
+1      | AdjointGMRESConvergenceFactor  | 2 (DOUBLE)
+2      | AlphaEnd                       | 2 (DOUBLE)
+3      | AlphaNpts                      | 1 (INT)
+4      | AlphaStart                     | 2 (DOUBLE)
+5      | AutoTimeNumRevs                | 1 (INT)
+6      | AutoTimeStepFlag               | 1 (INT)
+7      | BetaEnd                        | 2 (DOUBLE)
+8      | BetaNpts                       | 1 (INT)
+9      | BetaStart                      | 2 (DOUBLE)
+10     | CGDegenSet                     | 1 (INT)
+11     | CGGeomSet                      | 1 (INT)
+12     | CGModeID                       | 3 (STRING)
+13     | CLMax2D                        | 2 (DOUBLE)
+14     | Clo2D                          | 2 (DOUBLE)
+15     | CoreSizeFactor                 | 2 (DOUBLE)
+16     | FarAway                        | 2 (DOUBLE)
+17     | FarDist                        | 2 (DOUBLE)
+18     | FarDistToggle                  | 1 (INT)
+19     | FixedWakeFlag                  | 1 (INT)
+20     | ForwardGMRESConvergenceFactor  | 2 (DOUBLE)
+21     | FreezeMultiPoleAtIteration     | 1 (INT)
+22     | FreezeWakeAtIteration          | 1 (INT)
+23     | FreezeWakeRootVortices         | 1 (INT)
+24     | FromSteadyState                | 1 (INT)
+25     | GeomSet                        | 1 (INT)
+26     | GroundEffect                   | 2 (DOUBLE)
+27     | GroundEffectToggle             | 1 (INT)
+28     | HoverRamp                      | 2 (DOUBLE)
+29     | HoverRampFlag                  | 1 (INT)
+30     | ImplicitWake                   | 1 (INT)
+31     | ImplicitWakeStartIteration     | 1 (INT)
+32     | MACFlag                        | 1 (INT)
+33     | MachEnd                        | 2 (DOUBLE)
+34     | MachNpts                       | 1 (INT)
+35     | MachStart                      | 2 (DOUBLE)
+36     | Machref                        | 2 (DOUBLE)
+37     | ManualVrefFlag                 | 1 (INT)
+38     | MassSliceDir                   | 1 (INT)
+39     | ModeID                         | 3 (STRING)
+40     | NCPU                           | 1 (INT)
+41     | NoiseCalcFlag                  | 1 (INT)
+42     | NoiseCalcType                  | 1 (INT)
+43     | NoiseUnits                     | 1 (INT)
+44     | NonLinearConvergenceFactor     | 2 (DOUBLE)
+45     | NumMassSlice                   | 1 (INT)
+46     | NumTimeSteps                   | 1 (INT)
+47     | NumWakeNodes                   | 1 (INT)
+48     | PropBladesMode                 | 1 (INT)
+49     | QuadTreeBufferLevels           | 1 (INT)
+50     | ReCref                         | 2 (DOUBLE)
+51     | ReCrefEnd                      | 2 (DOUBLE)
+52     | ReCrefNpts                     | 1 (INT)
+53     | RedirectFile                   | 3 (STRING)
+54     | RefFlag                        | 1 (INT)
+55     | Rho                            | 2 (DOUBLE)
+56     | ScurveFlag                     | 1 (INT)
+57     | Sref                           | 2 (DOUBLE)
+58     | StallModel                     | 1 (INT)
+59     | StartAveragingTimeStep         | 1 (INT)
+60     | StopBeforeRun                  | 1 (INT)
+61     | Symmetry                       | 1 (INT)
+62     | TecplotFlag                    | 1 (INT)
+63     | ThinGeomSet                    | 1 (INT)
+64     | TimeStepSize                   | 2 (DOUBLE)
+65     | UnsteadyType                   | 1 (INT)
+66     | UpdateMatrixPreconditioner     | 1 (INT)
+67     | UseCGModeFlag                  | 1 (INT)
+68     | UseModeFlag                    | 1 (INT)
+69     | UseWakeNodeMatrixPreconditioner | 1 (INT)
+70     | Vinf                           | 2 (DOUBLE)
+71     | Vref                           | 2 (DOUBLE)
+72     | WakeNumIter                    | 1 (INT)
+73     | WakeRelax                      | 2 (DOUBLE)
+74     | WingID                         | 3 (STRING)
+75     | Xcg                            | 2 (DOUBLE)
+76     | Ycg                            | 2 (DOUBLE)
+77     | Zcg                            | 2 (DOUBLE)
+78     | bref                           | 2 (DOUBLE)
+79     | cref                           | 2 (DOUBLE)
