@@ -52,6 +52,3 @@ This project is **Open Source**. I started this as my Final Year Project at **II
 ## 📜 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-
-**Do you have the MATLAB code and OpenVSP files ready for upload, or do you need help writing a "Quick Start" guide for the code itself?**
